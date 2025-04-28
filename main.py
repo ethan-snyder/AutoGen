@@ -1,5 +1,6 @@
 import random
 import string
+import pyperclip
 
 # Random letter
 letter = random.choice(string.ascii_letters)  # picks a random letter (uppercase or lowercase)
@@ -22,4 +23,4 @@ for i in range(20):
     password += curr_char
 
 
-print(password)
+pyperclip.copy(password) # Copies password to clipboard
